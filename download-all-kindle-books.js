@@ -4,7 +4,7 @@
 // @version      0.2.1
 // @description  Adds a button to trigger downloads of all Kindle books on the page
 // @author       Chris Hollindale
-// @match        https://www.amazon.com/hz/mycd/digital-console/contentlist/*
+// @match        https://www.amazon.co.uk/hz/mycd/digital-console/contentlist/*
 // @grant        GM_xmlhttpRequest
 // @grant        GM_addStyle
 // @run-at       document-idle
@@ -101,7 +101,7 @@
 
               // Wait a little before processing the next dropdown
               // This is set to 5 seconds - you can speed this up even faster if you prefer
-              await new Promise(resolve => setTimeout(resolve, 5000));
+              await new Promise(resolve => setTimeout(resolve, 1000));
           }
 
           console.log('All dropdowns processed');
